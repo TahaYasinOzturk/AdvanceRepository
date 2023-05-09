@@ -1,7 +1,11 @@
+using AdvanceRepository.Models.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<Context>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Personel")));
 
 var app = builder.Build();
 
