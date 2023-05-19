@@ -1,4 +1,5 @@
 ﻿using AdvanceRepository.Models.Data;
+using AdvanceRepository.Repository.Abstract;
 
 namespace AdvanceRepository.UnitOfWork
 {

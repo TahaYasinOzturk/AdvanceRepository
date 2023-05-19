@@ -1,5 +1,6 @@
 ﻿using AdvanceRepository.Models.Classes;
 using AdvanceRepository.Models.ViewModel;
+using AdvanceRepository.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdvanceRepository.Controllers

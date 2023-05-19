@@ -1,4 +1,6 @@
-﻿namespace AdvanceRepository.UnitOfWork
+﻿using AdvanceRepository.Repository.Abstract;
+
+namespace AdvanceRepository.UnitOfWork
 {
     public interface IUnitOfWork
     {
