@@ -1,0 +1,30 @@
+﻿
+@model AdvanceRepository.Models.ViewModel.CategoriesModel
+
+
+
+<h4>@Model.Head</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SelectedCat.Id" />
+            <div class="form-group">
+                <label asp-for="SelectedCat.Name" class="control-label"></label>
+                <input asp-for="SelectedCat.Name" class="form-control" />
+                <span asp-validation-for="SelectedCat.Name" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="@Model.Text" class="btn btn-@Model.Class" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
