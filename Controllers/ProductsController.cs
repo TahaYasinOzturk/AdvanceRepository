@@ -21,6 +21,7 @@ namespace AdvanceRepository.Controllers
             //return View(UnitOfWork.productRepository.List()); 
             //listi getproduct olarak degistirdik.
             return View(UnitOfWork.productRepository.GetProducts());
+            //burayı düzelt DTO ekle
         }
         public IActionResult Add()
         {
