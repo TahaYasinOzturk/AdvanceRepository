@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AdvanceRepository.Controllers
 {
-    public class CategoriesController : Controller
+    public class CategoriesController : BaseController
     {
         //private readonly IUnitOfWork UnitOfWork;
         private readonly CategoriesModel model;
         // interfacesin faydasını anlatıcaz.
-        public CategoriesController(IUnitOfWork UnitOfWork, CategoriesModel model)
+        public CategoriesController(IUnitOfWork UnitOfWork, CategoriesModel model) : base(UnitOfWork)
         {
             this.UnitOfWork = UnitOfWork;
             this.model = model;

@@ -1,4 +1,5 @@
 ﻿using AdvanceRepository.CoreRepository;
+using AdvanceRepository.DTO;
 using AdvanceRepository.Models.Classes;
 
 namespace AdvanceRepository.Repository.Abstract
@@ -9,6 +10,8 @@ namespace AdvanceRepository.Repository.Abstract
         decimal PriceVAT(Guid Id);
         decimal PriceDiscount(Guid Id);
 
+        //productDTO icin  
 
+        List<ProductsDTO> GetProducts();
     }
 }

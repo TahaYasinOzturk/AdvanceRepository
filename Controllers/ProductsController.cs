@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AdvanceRepository.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : BaseController
     {
         //private readonly IUnitOfWork unitOfWork;
         private readonly ProductsModel model;
 
-        public ProductsController(IUnitOfWork UnitOfWork, ProductsModel model) 
+        public ProductsController(IUnitOfWork UnitOfWork, ProductsModel model) : base(UnitOfWork)
         {
             //this.unitOfWork = UnitOfWork;
             this.model = model;
