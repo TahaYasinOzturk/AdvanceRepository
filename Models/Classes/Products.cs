@@ -6,6 +6,7 @@ namespace AdvanceRepository.Models.Classes
     {
         public decimal Price { get; set; }
 
+        //guid oldugu icin kullanıcının elle girmesi mümkün deil . kadın kategorisinde id uzun bisi olur. Productscontroller ve productmodel(burdayken baktık) yazıyoruz suan. w3schoolda option kısmına baktık comboboxta kullanıcı adını normal görecek ama value kısmında biz ıd olacak. foto var. 24.04
         public Guid CategoryId { get; set; }
         [ForeignKey(nameof(CategoryId))]
 
